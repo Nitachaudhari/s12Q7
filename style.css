@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(8, 235, 235);
+    font-weight: bold;
+}
+
+.keyboard{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+    width: 75%;
+    background-color: rgb(41, 37, 37);
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px solid black;
+
+}
+
+.key{
+    background-color: rgba(57, 56, 56, 0.834);
+    text-align: center;
+
+    color: aqua;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.key.wide{
+    grid-column: span 2;
+}
+
+.key.extra-wide{
+    grid-column: span 4;
+}
